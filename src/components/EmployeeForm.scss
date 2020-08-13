@@ -1,0 +1,76 @@
+form { 
+    display: grid;
+    grid-column-gap: 0.5em;
+    grid-template-areas: 
+    "name name"
+    "email email"
+    "phone department"
+    "btn btn"
+    ;
+}
+form .name {
+    grid-area: name;
+}
+form .email {
+    grid-area: email;
+}
+form .phone {
+    grid-area: phone;
+}
+form .department {
+    grid-area: department;
+}
+form .btn .btn-update {
+    grid-area: btn;
+}
+
+input[type=text], input[type=email]{
+    width: 100%;
+    padding: 8px 0px;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    color: #4d4d4d;
+}
+input:focus {
+    outline: none;
+    border-bottom: 1px solid red;
+}
+label {
+    font-size: 1rem;
+}
+select {
+    width: 100%;
+    font-size: 1rem;
+    padding-bottom: 12px;
+    border: none;
+    background: transparent;
+    // margin-top: 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 8px 0px;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+.btn-update {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 8px 0px;
+    background-color:  #4d9900;
+    border: 1px solid  #4d9900;
+    color: #f2f2f2;
+    border-bottom: none;
+    cursor: pointer;
+}
+.btn:focus {
+    border-bottom: none;
+    // background-color: #808080;
+    // color: #f2f2f2;
+}
